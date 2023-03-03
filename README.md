@@ -1,6 +1,7 @@
 # ZoneMinder-on-Ubuntu-22.04
 Ubuntu 22.04 with ZoneMinder Installation
 
+## Basic installation
 Add repository and update it
 
     add-apt-repository ppa:iconnor/zoneminder-1.36
@@ -20,10 +21,6 @@ Change time zone on system and php.ini
     joe /etc/php/*/apache2/php.ini
         date.timezone = Europe/Zurich
 
-Enable SSL
-
-    a2enmod ssl
-
 Enable rewriting module
 
     a2enmod cgi rewrite expires headers
@@ -36,3 +33,9 @@ Update your installation and reboot
 
     apt -y upgrade
     reboot
+
+## Lets encrypt
+Enable SSL
+
+    a2enmod ssl
+    apt install certbot python3-certbot-apache
