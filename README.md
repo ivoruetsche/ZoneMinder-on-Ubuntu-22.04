@@ -2,8 +2,8 @@
 Ubuntu 22.04 with ZoneMinder Installation
 
 ## Add repository and update it
-add-apt-repository ppa:iconnor/zoneminder-1.36
-apt update
+ add-apt-repository ppa:iconnor/zoneminder-1.36
+ apt update
 
 ## Install Zoneminder
 apt install zoneminder joe
